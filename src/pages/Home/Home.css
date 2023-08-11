@@ -1,0 +1,59 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.allegory-hero__container{
+    padding-top: 5.5rem;
+    background-image: url('../../asset/img/hero.jpg');
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.allegory-hero__content{
+    padding: 70px 40px;
+}
+
+.allegory-hero__content--title{
+    font-family: 'Zilla Slab', serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: normal;
+}
+
+.allegory-hero__content--p{
+    width: 600px;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    color: #000;
+    font-size: 13.5px;
+    margin-top: 20px;
+    padding:0;
+}
+
+.allegory-hero__content--button{
+    background-color: #282828;
+    border: none;
+    color: #fff;
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    margin-top: 35px;
+    font-size: 14px;
+}
+
+.allegory-hero__content--button:hover{
+    background-color:  #8CD7D7;
+    cursor: pointer;
+}
+
+.allegory-hero__content--button:active{
+    background-color: #000;
+    cursor: pointer;
+}

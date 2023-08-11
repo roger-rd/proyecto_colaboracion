@@ -1,0 +1,44 @@
+
+
+.allegory-nav__links--right > a{ 
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+    font-weight: 500;
+    color: #000;
+    font-size: 14.5px;
+}
+
+.allegory-nav__links--right > a:hover{
+    cursor: pointer;
+}
+
+.allegory-footer__container{
+    height: 8rem;
+    display: flex;
+    padding: 15px 30px;
+    border-top: 1px solid #5F5F5F;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.allegory-footer__logo{
+    height:35px;
+    width:auto;
+}
+
+
+.allegory-footer__link{
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none !important;
+    padding: 0px 10px 0px 10px;
+    font-weight: 500;
+    color: #000;
+    font-size: 14.5px;
+    text-decoration: none;
+}
+
+.allegory-footer__link:hover{
+    color:  #8CD7D7;
+    cursor: pointer;
+}
