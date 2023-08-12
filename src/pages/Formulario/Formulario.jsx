@@ -54,7 +54,7 @@ export default function Formulario() {
     <div className="form-check">
       <input className="form-check-input" type="checkbox" id="gridCheck"/>
       <label className="form-check-label" for="gridCheck">
-        Check me out
+        Registrar
       </label>
     </div>
   </div>
