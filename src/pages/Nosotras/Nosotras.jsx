@@ -1,4 +1,6 @@
 import React from 'react'
+// import './Nosotros.css'
+import '../../components/styles/styles.css'
 
 
 export default function Nosotros() {

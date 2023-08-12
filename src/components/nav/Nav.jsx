@@ -14,7 +14,8 @@ export default function Nav() {
 
         <div className="allegory-nav__links--left">
         <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)} end to="/Home" >Inicio</NavLink>
-            <a >Buscador</a>
+        <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)} end to="/buscador" >Buscador</NavLink>
+            
             <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)} end to="/nosotras" >Nosotras</NavLink>
             <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)} end to="/blog" >Blog</NavLink>
             
