@@ -7,7 +7,7 @@ import Nav from './components/nav/Nav';
 import Home from './pages/Home/Homes';
  import Blog from './pages/Blog/Blogs'
  import Nosotras from './pages/Nosotras/Nosotras'
-
+ import Productos from './pages/Producto/Productos';
 
 
 
@@ -20,6 +20,7 @@ function App() {
       <Routes>
       <Route path="/home" element={<Home />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/buscador" element={<Productos />} />
       
       <Route path="/nosotras" element={<Nosotras />} />  
       </Routes>

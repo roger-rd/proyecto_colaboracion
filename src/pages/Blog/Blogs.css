@@ -1,0 +1,27 @@
+.card-blog{
+    background-color: #fdfdfd;
+}
+.card-link{
+    font-family: 'DM Sans', sans-serif !important;
+    text-decoration: none;
+    color: #282828;
+    text-align: right;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.card-link:hover{
+    color: #2ab7ca;
+    cursor: pointer;
+}
+
+.blog__titulo{
+    font-family: 'Zilla Slab', serif;
+    font-weight: 600 !important;
+    font-size: 26px !important; 
+}
+
+.blog__p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+}

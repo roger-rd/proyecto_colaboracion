@@ -1,0 +1,10 @@
+.allegory-page__container--title{
+    font-family: 'Zilla Slab', serif;
+    text-align: center;
+    margin: 2%;
+}
+
+.allegory-page__content--p{
+    font-family: 'DM Sans', sans-serif !important;
+    padding:15px;
+}
