@@ -34,15 +34,15 @@ export default function Blog() {
                 <a href="#" className="card-link"> Leer más <i className="fas fa-arrow-right m-1 "></i>  </a>
               </div>
     
-              <div class="card col-12 col-md-4 card-blog">
+              <div className="card col-12 col-md-4 card-blog">
               <a> <img className="card-img-top"  src={top} alt="Logo de la página" /> </a>
-                <div class="card-body">
-                  <h3 class="blog__titulo">Sobre Allegory</h3>
-                  <p class="blog__p">
+                <div className="card-body">
+                  <h3 className="blog__titulo">Sobre Allegory</h3>
+                  <p className="blog__p">
                     No importa tu tipo de cuerpo, estatura, color de ojos, piel o pelo para encontrar tu estilo, sólo debes buscar lo que te...
                   </p>
                 </div>
-                <a href="#" class="card-link"> Leer más <i class="fas fa-arrow-right m-1 "></i>  </a>
+                <a href="#" className="card-link"> Leer más <i className="fas fa-arrow-right m-1 "></i>  </a>
               </div>
           </div>
     </section>

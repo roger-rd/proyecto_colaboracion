@@ -25,13 +25,13 @@ function Nav1() {
     </div>
   </nav>
 
-    // <nav class="navbar navbar-expand-lg navbar-light allegory-nav__container">
+    // <nav className="navbar navbar-expand-lg navbar-light allegory-nav__container">
     //   <div className="col-6 allegory-nav__logo">
        
     //   </div>
     //   <ul>
-    //     <a class="allegory-nav__links--left" href="/"> Inicio</a> 
-    //     <a class="col-3" href="/about"> Acerca de</a>
+    //     <a className="allegory-nav__links--left" href="/"> Inicio</a> 
+    //     <a className="col-3" href="/about"> Acerca de</a>
        
     //   </ul>
     // </nav>

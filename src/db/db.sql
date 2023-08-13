@@ -3,7 +3,7 @@ CREATE DATABASE allegory;
 
 CREATE TABLE datos_personales (
   id SERIAL PRIMARY KEY,
-  correo VARCHAR(255) NOT NULL,
+  correo VARCHAR(255) NOT NULL UNIQUE,
   contraseña VARCHAR(255) NOT NULL,
   nombre VARCHAR(255) NOT NULL,
   peso DECIMAL,
