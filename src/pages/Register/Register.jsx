@@ -47,7 +47,7 @@ export default function RegistroForm() {
       try {
 
         console.log(usuario)
-        // const urlServer = "http://localhost:3001/api/v1/user";
+        // const urlServer = "http://localhost:3001/";
         // const endpoint = "/register"
 
         // await axios.post(urlServer + endpoint, usuario)
@@ -242,6 +242,12 @@ export default function RegistroForm() {
           
           className="btn btn-primary">Registrar
           </button>
+          {/* <button 
+          onClick={registrarUsuario }
+          type="submit" 
+          
+          className="btn btn-primary">Registrar
+          </button> */}
         </div>
       </form>
     </div>
