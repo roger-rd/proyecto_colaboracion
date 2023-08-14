@@ -1,45 +1,99 @@
-import logo from '../../asset/img/Logo_nav-01.svg'
-import './Nav1.css';
-
+import logo from "../../asset/img/Logo_nav-01.svg";
+import "../styles/styles.css";
 
 function Nav1() {
   return (
+    <div className="container-fluid project-tab">
+      <div className="row">
+        <div className="col-12">
+          <nav>
+            <div className="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a
+                className="nav-item nav-link active "
+                id="nav-home-tab"
+                data-toggle="tab"
+                href="#nav-home"
+                role="tab"
+                aria-controls="nav-home"
+                aria-selected="true"
+              >
+                Productos
+              </a>
+              <NavLink
+                className={({ isActive }) => (isActive ? "active" : undefined)}
+                end
+                to="/estilos"
+              >
+                Estilos
+              </NavLink>
+              <a
+                className="nav-item nav-link disabled"
+                id="nav-contact-tab"
+                data-toggle="tab"
+                href="#nav-contact"
+                role="tab"
+                aria-controls="nav-contact"
+                aria-selected="false"
+              >
+                Colorimetría
+              </a>
+              <a
+                className="nav-item nav-link disabled"
+                id="nav-cuerpo-tab"
+                data-toggle="tab"
+                href="#nav-cuerpo"
+                role="tab"
+                aria-controls="nav-cuerpo"
+                aria-selected="false"
+              >
+                Tipo de cuerpo
+              </a>
+              <a
+                className="nav-item nav-link disabled"
+                id="nav-ocasion-tab"
+                data-toggle="tab"
+                href="#nav-ocasion"
+                role="tab"
+                aria-controls="nav-ocasion"
+                aria-selected="false"
+              >
+                Ocasión
+              </a>
+              <a
+                className="nav-item nav-link disabled"
+                id="nav-actividad-tab"
+                data-toggle="tab"
+                href="#nav-actividad"
+                role="tab"
+                aria-controls="nav-actividad"
+                aria-selected="false"
+              >
+                Etapa
+              </a>
+            </div>
+          </nav>
 
-    <nav className="navbar navbar-expand-lg navbar-light allegory-nav__container">
-    
-    <div className="collapse navbar-collapse allegory-nav__links col-3" id="navbarNav">
-
-      <div className="allegory-nav__links--left">
-        <a>Inicio</a>
-
+          <div className="tab-content" id="nav-tabContent">
+            <div
+              className="tab-pane active show fade"
+              id="nav-home"
+              role="tabpanel"
+              aria-labelledby="nav-home-tab "
+            >
+              <div className="mt-5 mb-5">
+                <h2 className="mb-3">Productos</h2>
+                <p>
+                  {" "}
+                  Tenemos un amplio catálogo de productos. Por favor escoge uno
+                  del listado a continuación:{" "}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div className="col-6 allegory-nav__logo">
-      <a> <img src={logo} alt="Logo de la página" /> </a>
-    </div>
-    <div className="col-3">
-      <div className="text-right">
-         <button type="button" className="btn btn-calipso">
-            Suscríbete </button> 
-      </div>
-    </div>
-  </nav>
-
-    // <nav className="navbar navbar-expand-lg navbar-light allegory-nav__container">
-    //   <div className="col-6 allegory-nav__logo">
-       
-    //   </div>
-    //   <ul>
-    //     <a className="allegory-nav__links--left" href="/"> Inicio</a> 
-    //     <a className="col-3" href="/about"> Acerca de</a>
-       
-    //   </ul>
-    // </nav>
-    
   );
 }
 
 export default Nav1;
-
-
-{/* <img src={logo} alt="Logo de la página" /> */}

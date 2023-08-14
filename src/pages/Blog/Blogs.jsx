@@ -1,5 +1,7 @@
 import React from "react";
 import top from '../../asset/img/post-1.png'
+import to1 from '../../asset/img/post-2.png'
+import to2 from '../../asset/img/post-3.png'
 // import './Blogs.css'
 import '../../components/styles/styles.css'
 
@@ -24,7 +26,7 @@ export default function Blog() {
               </div>
     
               <div className="card col-12 col-md-4 card-blog">
-              <a> <img className="card-img-top"  src={top} alt="Logo de la página" /> </a>   
+              <a> <img className="card-img-top"  src={to1} alt="Logo de la página" /> </a>   
                 <div className="card-body">
                   <h3 className="blog__titulo">Estilo</h3>
                   <p className="blog__p">
@@ -35,7 +37,7 @@ export default function Blog() {
               </div>
     
               <div className="card col-12 col-md-4 card-blog">
-              <a> <img className="card-img-top"  src={top} alt="Logo de la página" /> </a>
+              <a> <img className="card-img-top"  src={to2} alt="Logo de la página" /> </a>
                 <div className="card-body">
                   <h3 className="blog__titulo">Sobre Allegory</h3>
                   <p className="blog__p">

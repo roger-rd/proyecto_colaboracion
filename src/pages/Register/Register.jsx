@@ -209,8 +209,7 @@ export default function RegistroForm() {
             id="inputState"
             className="form-select"
           >
-            <option value="">selecciona una categoria</option>
-            <option value="Tu_Cuerpo">Tu Cuerpo</option>
+            <option selected="">selecciona una categoria</option>
             <option value="trianguloInvertido">Triangulo Invertido</option>
             <option value="relojDeArena">Reloj de arena</option>
             <option value="triangulo">Triangulo</option>

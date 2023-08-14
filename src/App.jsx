@@ -9,6 +9,7 @@ import Home from './pages/Home/Homes';
  import Nosotras from './pages/Nosotras/Nosotras'
  import Productos from './pages/Producto/Productos';
  import Register from './pages/Register/Register';
+import Estilos from './pages/Estilos/Estilos';
 
 
 
@@ -23,6 +24,7 @@ function App() {
       <Route path="/blog" element={<Blog />} />
       <Route path="/buscador" element={<Productos />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/estilos" element={<Estilos />} /> 
       
       <Route path="/nosotras" element={<Nosotras />} />  
       </Routes>
