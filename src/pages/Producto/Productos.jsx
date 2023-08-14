@@ -25,16 +25,8 @@ import top from '../../asset/img/top.svg';
 import vestido from '../../asset/img/vestido.svg';
 import zapatillas from '../../asset/img/zapatillas.svg';
 import zapatos from '../../asset/img/zapatos.svg';
-
-
-
-
-
-
-
-
-
 import '../../components/styles/styles.css'
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -50,7 +42,7 @@ export default function Productos() {
               <nav>
                 <div className="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                   <a className="nav-item nav-link active " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Productos</a>
-                  <a className="nav-item nav-link disabled" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Estilo</a>
+                  <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)}  end to="/estilos" >Estilos</NavLink>
                   <a className="nav-item nav-link disabled" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Colorimetría</a>
                   <a className="nav-item nav-link disabled" id="nav-cuerpo-tab" data-toggle="tab" href="#nav-cuerpo" role="tab" aria-controls="nav-cuerpo" aria-selected="false">Tipo de cuerpo</a>
                   <a className="nav-item nav-link disabled" id="nav-ocasion-tab" data-toggle="tab" href="#nav-ocasion" role="tab" aria-controls="nav-ocasion" aria-selected="false">Ocasión</a>
@@ -273,8 +265,8 @@ export default function Productos() {
       </div>
 
     </div>
-{/* 
-    <!-- Pestaña 2: ESTILO --> */}
+
+    
 
    
 
