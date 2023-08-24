@@ -198,6 +198,127 @@ export default function RegistroForm() {
             required
           />
         </div>
+        <div className="col-md-2">
+          <label
+            htmlFor="peso"
+            className="form-label">Cadera</label>
+          <input
+          value={usuario.cadera}
+          onChange={handleSetUsuario}
+            type="text"
+            className="form-control"
+            id="cadera"
+            pattern='[0-9]{1,3}'
+            title='solo numeros positivos'
+            required
+          />
+        </div>
+        <div className="col-md-2">
+          <label
+            htmlFor="peso"
+            className="form-label">Muslo</label>
+          <input
+          value={usuario.muslo}
+          onChange={handleSetUsuario}
+            type="text"
+            className="form-control"
+            id="muslo"
+            pattern='[0-9]{1,3}'
+            title='solo numeros positivos'
+            required
+          />
+        </div>
+        <div className="col-md-2">
+          <label
+            htmlFor="peso"
+            className="form-label">Largo Tiro</label>
+          <input
+          value={usuario.largoT}
+          onChange={handleSetUsuario}
+            type="text"
+            className="form-control"
+            id="largoT"
+            pattern='[0-9]{1,3}'
+            title='solo numeros positivos'
+            required
+          />
+        </div>
+        <div className="col-md-2">
+          <label
+            htmlFor="peso"
+            className="form-label">Largo Pierna</label>
+          <input
+          value={usuario.largoP}
+          onChange={handleSetUsuario}
+            type="text"
+            className="form-control"
+            id="largoP"
+            pattern='[0-9]{1,3}'
+            title='solo numeros positivos'
+            required
+          />
+        </div>
+        <div className="col-md-2">
+          <label
+            htmlFor="peso"
+            className="form-label">Hombro</label>
+          <input
+          value={usuario.hombro}
+          onChange={handleSetUsuario}
+            type="text"
+            className="form-control"
+            id="hombro"
+            pattern='[0-9]{1,3}'
+            title='solo numeros positivos'
+            required
+          />
+        </div>
+        <div className="col-md-2">
+          <label
+            htmlFor="peso"
+            className="form-label">Largo Manga</label>
+          <input
+          value={usuario.largoM}
+          onChange={handleSetUsuario}
+            type="text"
+            className="form-control"
+            id="largoM"
+            pattern='[0-9]{1,3}'
+            title='solo numeros positivos'
+            required
+          />
+        </div>
+        <div className="col-md-2">
+          <label
+            htmlFor="peso"
+            className="form-label">Largo Pie</label>
+          <input
+          value={usuario.largoPie}
+          onChange={handleSetUsuario}
+            type="text"
+            className="form-control"
+            id="largoPie"
+            pattern='[0-9]{1,3}'
+            title='solo numeros positivos'
+            required
+          />
+        </div>
+        <div className="col-md-2">
+          <label
+            htmlFor="peso"
+            className="form-label">Empeine</label>
+          <input
+          value={usuario.empeine}
+          onChange={handleSetUsuario}
+            type="text"
+            className="form-control"
+            id="empeine"
+            pattern='[0-9]{1,3}'
+            title='solo numeros positivos'
+            required
+          />
+        </div>
+        
 
 
         <div className="col-md-2">
