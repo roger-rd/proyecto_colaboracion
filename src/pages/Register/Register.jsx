@@ -21,17 +21,18 @@ export default function RegistroForm() {
         "apellido",
         "email",
         "password",
+        "altura",
         "cintura",
         "busto",
-        "altura",
-        "peso"
+        "peso",
+        "state"
     ];
     return camposRequeridos.every((campo)=> usuario[campo]?.trim() !== ""); 
   };
 
   const registrarUsuario = async () => {
 
-    if (!(validarCamposLlenos)) {
+    if (!(validarCamposLlenos())) {
       toast.error("Todos los campos son obligatorios", {
         position: "top-center",
         autoClose: 5000,
@@ -47,11 +48,11 @@ export default function RegistroForm() {
       try {
 
         console.log(usuario)
-        // const urlServer = "http://localhost:3001/";
-        // const endpoint = "/register"
+        const urlServer = "http://localhost:3001/api/user/";
+        const endpoint = "/register"
 
-        // await axios.post(urlServer + endpoint, usuario)
-        // toast.success("Usuario registrado con éxito 😀", { autoClose: 2000 });
+        await axios.post(urlServer + endpoint, usuario)
+        toast.success("Usuario registrado con éxito 😀", { autoClose: 2000 });
        
 
       // navigate("/login");
@@ -235,18 +236,16 @@ export default function RegistroForm() {
         </div>
         <div className="col-12">
        
-          <button 
+          {/* <button 
           onClick={(e) => { e.preventDefault();registrarUsuario;console.log(usuario)} }
           type="submit" 
           
           className="btn btn-primary">Registrar
-          </button>
-          {/* <button 
-          onClick={registrarUsuario }
-          type="submit" 
-          
-          className="btn btn-primary">Registrar
           </button> */}
+          <button 
+          onClick={registrarUsuario}          
+          className="btn btn-primary">Registrar
+          </button>
         </div>
       </form>
     </div>
