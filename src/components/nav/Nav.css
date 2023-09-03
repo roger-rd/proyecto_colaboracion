@@ -61,3 +61,10 @@
     color: #8CD7D7;
     cursor: pointer;
 }
+
+a{
+    text-decoration: none;
+}
+body {
+    margin-bottom: 100px; 
+  }

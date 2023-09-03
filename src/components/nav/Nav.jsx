@@ -27,12 +27,18 @@ export default function Nav() {
     <a> <img src={logo} alt="Logo de la página" /> </a>
         
     </div>
-    <div className="col-3">
+    <div className="col-2">
         <div type="button" className="text-right btn btn-calipso ">
         <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)}  end to="/register" >Suscríbete</NavLink>
-    
         </div>
+       
     </div>
+   
+
+    <div type="button" className="text-right btn btn-calipso ">
+              <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)}  end to="/login" >Iniciar sesion</NavLink>
+
+        </div>
 </nav>
   )
 }

@@ -55,9 +55,9 @@ export default function RegistroForm() {
         toast.success("Usuario registrado con éxito 😀", { autoClose: 2000 });
        
 
-      // navigate("/login");
+      navigate("/login");
     } catch (error) {
-        if(usuario.correo == usuario.correo){
+        if(usuario.email == usuario.email){
 
         toast.error("Algo salió mal...", {
           position: "top-center",
