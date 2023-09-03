@@ -1,5 +1,5 @@
 import React from 'react'
-// import './Nosotros.css'
+// import './Nosotrss.css'
 import '../../components/styles/styles.css'
 
 

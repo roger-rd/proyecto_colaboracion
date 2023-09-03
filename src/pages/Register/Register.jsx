@@ -21,17 +21,18 @@ export default function RegistroForm() {
         "apellido",
         "email",
         "password",
+        "altura",
         "cintura",
         "busto",
-        "altura",
-        "peso"
+        "peso",
+        "state"
     ];
     return camposRequeridos.every((campo)=> usuario[campo]?.trim() !== ""); 
   };
 
   const registrarUsuario = async () => {
 
-    if (!(validarCamposLlenos)) {
+    if (!(validarCamposLlenos())) {
       toast.error("Todos los campos son obligatorios", {
         position: "top-center",
         autoClose: 5000,
@@ -47,16 +48,16 @@ export default function RegistroForm() {
       try {
 
         console.log(usuario)
-        // const urlServer = "http://localhost:3001/";
-        // const endpoint = "/register"
+        const urlServer = "http://localhost:3001/api/user";
+        const endpoint = "/register"
 
-        // await axios.post(urlServer + endpoint, usuario)
-        // toast.success("Usuario registrado con éxito 😀", { autoClose: 2000 });
+        await axios.post(urlServer + endpoint, usuario)
+        toast.success("Usuario registrado con éxito 😀", { autoClose: 2000 });
        
 
-      // navigate("/login");
+      navigate("/login");
     } catch (error) {
-        if(usuario.correo == usuario.correo){
+        if(usuario.email == usuario.email){
 
         toast.error("Algo salió mal...", {
           position: "top-center",
@@ -84,6 +85,7 @@ export default function RegistroForm() {
             value={usuario.nombre}
             onChange={handleSetUsuario}
             type="text"
+            name="nombre"
             className="form-control"
             placeholder="First name"
             aria-label="First name"
@@ -99,6 +101,7 @@ export default function RegistroForm() {
             value={usuario.apellido}
             onChange={handleSetUsuario}
             type="text"
+            name="apellido"
             className="form-control"
             placeholder="Last name"
             aria-label="Last name"
@@ -116,6 +119,7 @@ export default function RegistroForm() {
               value={usuario.email}
               onChange={handleSetUsuario}
               type="email"
+              name="email"
               className="form-control"
               id="inputEmail4"
               placeholder="Example@email.com"
@@ -133,6 +137,7 @@ export default function RegistroForm() {
               value={usuario.password}
               onChange={handleSetUsuario}
               type="password"
+              name='password'
               className="form-control"
               id="inputPassword4"
               required
@@ -147,6 +152,7 @@ export default function RegistroForm() {
             value={usuario.cintura}
             onChange={handleSetUsuario}
             type="text"
+            name='cintura'
             className="form-control"
             id="cintura"
             pattern='[0-9]{1,3}'
@@ -162,6 +168,7 @@ export default function RegistroForm() {
           value={usuario.busto}
           onChange={handleSetUsuario}
             type="text"
+            name='busto'
             className="form-control"
             id="busto"
             pattern='[0-9]{1,3}'
@@ -177,6 +184,7 @@ export default function RegistroForm() {
           value={usuario.altura}
           onChange={handleSetUsuario}
             type="text"
+            name='altura'
             className="form-control"
             id="altura"
             pattern='[0-9]{1,3}'
@@ -191,6 +199,7 @@ export default function RegistroForm() {
           value={usuario.peso}
           onChange={handleSetUsuario}
             type="text"
+            name='peso'
             className="form-control"
             id="peso"
             pattern='[0-9]{1,3}'
@@ -330,7 +339,7 @@ export default function RegistroForm() {
             id="inputState"
             className="form-select"
           >
-            <option selected="">selecciona una categoria</option>
+            <option value="">selecciona una categoria</option>
             <option value="trianguloInvertido">Triangulo Invertido</option>
             <option value="relojDeArena">Reloj de arena</option>
             <option value="triangulo">Triangulo</option>
@@ -356,20 +365,19 @@ export default function RegistroForm() {
         </div>
         <div className="col-12">
        
-          <button 
+          {/* <button 
           onClick={(e) => { e.preventDefault();registrarUsuario;console.log(usuario)} }
           type="submit" 
           
           className="btn btn-primary">Registrar
-          </button>
-          {/* <button 
-          onClick={registrarUsuario }
-          type="submit" 
-          
-          className="btn btn-primary">Registrar
           </button> */}
+         
         </div>
       </form>
+      <button 
+          onClick={registrarUsuario}          
+          className="btn btn-primary">Registrar
+          </button>
     </div>
   )
   }

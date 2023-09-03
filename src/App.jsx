@@ -9,6 +9,8 @@ import Home from './pages/Home/Homes';
  import Nosotras from './pages/Nosotras/Nosotras'
  import Productos from './pages/Producto/Productos';
  import Register from './pages/Register/Register';
+ import Login from './pages/Login/Logins';
+
 import Estilos from './pages/Estilos/Estilos';
 import LoginForm from './pages/Login/Login';
 import Anteojos from './pages/ItemProductos/Anteojos';
@@ -39,12 +41,20 @@ import Zapatillas from './pages/ItemProductos/Zapatillas';
 import Zapatos from './pages/ItemProductos/zapatos';
 
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
+import Context from './context/Context';
+import { useState } from 'react';
 
 
 function App() {
+  const [usuario, setUsuario] = useState(null)
+
+
   return (
     <div className="App">
+      <Context.Provider value={{ usuario, setUsuario }} >  
       <Nav/>
       
       <Routes>
@@ -52,6 +62,8 @@ function App() {
       <Route path="/blog" element={<Blog />} />
       <Route path="/buscador" element={<Productos />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/login" element={<Login/>} />
+
       <Route path="/estilos" element={<Estilos />} /> 
       <Route path="/login" element={<LoginForm />} />
       <Route path="/anteojos" element={<Anteojos />} />
@@ -87,6 +99,8 @@ function App() {
       </Routes>
  
       <Footer/>
+      <ToastContainer/>
+      </Context.Provider>
     </div>
   );
 }
