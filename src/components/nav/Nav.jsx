@@ -30,14 +30,13 @@ export default function Nav() {
     <div className="col-2">
         <div type="button" className="text-right btn btn-calipso ">
         <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)}  end to="/register" >Suscríbete</NavLink>
-
-    </div>
-   
-
-    <div type="button" className="text-right btn btn-calipso ">
-              <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)}  end to="/login" >Iniciar sesion</NavLink>
-
         </div>
+    
+   </div>
+    <div type="button" className="text-right btn btn-calipso ">
+        <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)}  end to="/login" >Iniciar sesion</NavLink>
+        </div>
+    
 </nav>
   )
 }
