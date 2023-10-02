@@ -266,6 +266,7 @@ export default function RegistroForm() {
           value={usuario.largoP}
           onChange={handleSetUsuario}
             type="text"
+            name='largo_pierna'
             className="form-control"
             id="largoP"
             pattern='[0-9]{1,3}'
@@ -281,6 +282,7 @@ export default function RegistroForm() {
           value={usuario.hombro}
           onChange={handleSetUsuario}
             type="text"
+            name='hombro'
             className="form-control"
             id="hombro"
             pattern='[0-9]{1,3}'
@@ -296,6 +298,7 @@ export default function RegistroForm() {
           value={usuario.largoM}
           onChange={handleSetUsuario}
             type="text"
+            name='largo_manga'
             className="form-control"
             id="largoM"
             pattern='[0-9]{1,3}'
@@ -311,6 +314,7 @@ export default function RegistroForm() {
           value={usuario.largoPie}
           onChange={handleSetUsuario}
             type="text"
+            name='largo_pie'
             className="form-control"
             id="largoPie"
             pattern='[0-9]{1,3}'
@@ -326,6 +330,7 @@ export default function RegistroForm() {
           value={usuario.empeine}
           onChange={handleSetUsuario}
             type="text"
+            name='empeine'
             className="form-control"
             id="empeine"
             pattern='[0-9]{1,3}'
