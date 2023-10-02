@@ -5,6 +5,12 @@ import { NavLink } from 'react-router-dom'
 
 
 export default function Nav() {
+
+ 
+
+  
+
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light allegory-nav__container">
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,11 +39,18 @@ export default function Nav() {
         </div>
     
    </div>
+   <div className="col-1">
     <div type="button" className="text-right btn btn-calipso ">
         <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)}  end to="/login" >Iniciar sesion</NavLink>
         </div>
+        </div>
+        {/* <div className="col-1">
+    <div type="button" className="text-right btn btn-calipso ">
+          <button onClick={handleLogout}>Cerrar sesión</button>
+        </div>
+        </div> */}
         
     
 </nav>
   )
-}
+  }
