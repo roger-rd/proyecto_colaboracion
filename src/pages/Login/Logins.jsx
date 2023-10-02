@@ -37,10 +37,12 @@ export default function RegistroForm() {
       setLoading(true);
 
       
-        const { data: token } = await axios.post(urlServer + endpoint, usuario);
+        const {data} = await axios.post(urlServer + endpoint, usuario);
+
         toast.success("Usuario identificado con éxito 😀", { autoClose: 3000 });
-        localStorage.setItem("token", token); // Guardar el token en el localStorage
-        setUsuario(); // Debes proporcionar el usuario correcto aquí si es necesario
+        localStorage.setItem("token", data.token); // Guardar el token en el localStorage
+        localStorage.setItem("usuario", JSON.stringify(data.usuario)); // Guardar el token en el localStorage
+        // setUsuario(); // Debes proporcionar el usuario correcto aquí si es necesario
         setLoading(false);
         navigate("/buscador");
       

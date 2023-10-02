@@ -32,6 +32,8 @@ export default function RegistroForm() {
 
   const registrarUsuario = async () => {
 
+    console.log(usuario)
+
     if (!(validarCamposLlenos())) {
       toast.error("Todos los campos son obligatorios", {
         position: "top-center",
@@ -45,7 +47,7 @@ export default function RegistroForm() {
     }
 
 
-      try {
+    try {
 
         console.log(usuario)
         const urlServer = "http://localhost:3001/api/user";
@@ -57,20 +59,20 @@ export default function RegistroForm() {
 
       navigate("/login");
     } catch (error) {
-        if(usuario.email == usuario.email){
+          if(usuario.email == usuario.email){
 
-        toast.error("Algo salió mal...", {
-          position: "top-center",
-          autoClose: 5000,
-          hideProgressBar: true,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: false,
-        });
-        console.log(error);
+          toast.error("Algo salió mal...", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: false,
+          });
+          console.log(error);
+          }
     }
-      }
-    };
+  };
 
 
   return (
@@ -215,6 +217,7 @@ export default function RegistroForm() {
           value={usuario.cadera}
           onChange={handleSetUsuario}
             type="text"
+            name='cadera'
             className="form-control"
             id="cadera"
             pattern='[0-9]{1,3}'
@@ -225,11 +228,13 @@ export default function RegistroForm() {
         <div className="col-md-2">
           <label
             htmlFor="peso"
+            
             className="form-label">Muslo</label>
           <input
           value={usuario.muslo}
           onChange={handleSetUsuario}
             type="text"
+            name='muslo'
             className="form-control"
             id="muslo"
             pattern='[0-9]{1,3}'
@@ -245,6 +250,7 @@ export default function RegistroForm() {
           value={usuario.largoT}
           onChange={handleSetUsuario}
             type="text"
+            name='largo_tiro'
             className="form-control"
             id="largoT"
             pattern='[0-9]{1,3}'

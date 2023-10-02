@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../asset/img/Logo_nav-01.svg'
+import logo from '../../asset/img/logo_new_2.jpg'
 import './Nav.css'
 import { NavLink } from 'react-router-dom'
 
@@ -36,6 +36,7 @@ export default function Nav() {
     <div type="button" className="text-right btn btn-calipso ">
         <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)}  end to="/login" >Iniciar sesion</NavLink>
         </div>
+        
     
 </nav>
   )

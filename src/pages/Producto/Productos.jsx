@@ -53,7 +53,7 @@ export default function Productos() {
          <div className="container-fluid project-tab">
           <div className="row">
             <div className="col-12">
-              <nav>
+              {/* <nav>
                 <div className="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                   <a className="nav-item nav-link active " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Productos</a>
                   <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)}  end to="/estilos" >Estilos</NavLink>
@@ -64,7 +64,7 @@ export default function Productos() {
     
                 </div>
                 
-                </nav>
+                </nav> */}
             
         <div className="tab-content" id="nav-tabContent">
     
@@ -271,10 +271,7 @@ export default function Productos() {
 
           {/* <!-- Botón siguiente pestaña --> */}
 
-          <div className="col-12 text-center my-5">
-            <a href="#nav-profile" className="tab-links"> <button type="button" className="btn btn-dark px-5 py-3 ir-estilo">
-                Siguiente </button> </a>
-          </div>
+          
         </div>
       </div>
 
