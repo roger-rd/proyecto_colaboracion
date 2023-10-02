@@ -39,7 +39,7 @@ export default function Jeans() {
 
       if(usuario!==null){
         let user_json = JSON.parse(usuario);
-        setSelectedCinturaSize(user_json[0].cadera);
+        setSelectedCinturaSize(user_json[0].cintura);
       }
 
       try {

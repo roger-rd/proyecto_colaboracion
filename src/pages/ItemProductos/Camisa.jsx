@@ -35,6 +35,14 @@ export default function Camisa() {
   };
 
   const getProducts = async () => {
+    let usuario = localStorage.getItem("usuario");
+    
+      console.log(usuario);
+
+      if(usuario!==null){
+        let user_json = JSON.parse(usuario);
+        setSelectedPechoSize(user_json[0].busto);
+      }
     
     try {
       const response = await axios.get(
