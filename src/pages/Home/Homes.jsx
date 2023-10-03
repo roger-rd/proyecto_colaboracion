@@ -2,6 +2,7 @@ import React from 'react'
 
 
 import './Home.css';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -20,8 +21,9 @@ export default function Home() {
       comprar en tu talla.</h1>
       <a>
       
-        <button className="allegory-hero__content--button">Ir al buscador <i
-            className="fas fa-arrow-right"></i></button>
+        <button className="allegory-hero__content--button" >
+        <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)} end to="/buscador" >Ir al buscador </NavLink>
+          <i className="fas fa-arrow-right"></i></button>
       </a>
 
       </div>
