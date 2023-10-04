@@ -9,4 +9,4 @@ Currently, two official plugins are available:
 
 proyecto deploy en netlify 
 haz clic aca para ver 
-<a href="https://651ca0cb75fcf639b2890dd2--darling-dolphin-27c378.netlify.app/">Has clic aqui</a>
+<a href="https://imaginative-palmier-07e9d2.netlify.app">Has clic aqui</a>
